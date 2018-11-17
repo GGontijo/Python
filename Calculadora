@@ -1,0 +1,58 @@
+print('Bem vindo a FODENDO CALCULADORA MASTER BLASTER 3000!')
+print('░░░░░░░░▄▄▄███░░░░░░░░░░░░░░░░░░░░')
+print('░░░▄▄██████████░░░░░░░░░░░░░░░░░░░')
+print('░███████████████░░░░░░░░░░░░░░░░░░')
+print('░▀███████████████░░░░░▄▄▄░░░░░░░░░')
+print('░░░███████████████▄███▀▀▀░░░░░░░░░')
+print('░░░░███████████████▄▄░░░░░░░░░░░░░')
+print('░░░░▄████████▀▀▄▄▄▄▄░▀░░░░░░░░░░░░')
+print('▄███████▀█▄▀█▄░░█░▀▀▀░█░░▄▄░░░░░░░')
+print('▀▀░░░██▄█▄░░▀█░░▄███████▄█▀░░░▄░░░')
+print('░░░░░█░█▀▄▄▀▄▀░█▀▀▀█▀▄▄▀░░░░░░▄░▄█')
+print('░░░░░█░█░░▀▀▄▄█▀░█▀▀░░█░░░░░░░▀██░')
+print('░░░░░▀█▄░░░░░░░░░░░░░▄▀░░░░░░▄██░░')
+print('░░░░░░▀█▄▄░░░░░░░░▄▄█░░░░░░▄▀░░█░░')
+print('░░░░░░░░░▀███▀▀████▄██▄▄░░▄▀░░░░░░')
+print('░░░░░░░░░░░█▄▀██▀██▀▄█▄░▀▀░░░░░░░░')
+print('░░░░░░░░░░░██░▀█▄█░█▀░▀▄░░░░░░░░░░')
+print('░░░░░░░░░░█░█▄░░▀█▄▄▄░░█░░░░░░░░░░')
+print('░░░░░░░░░░█▀██▀▀▀▀░█▄░░░░░░░░░░░░░')
+print('░░░░░░░░░░░░▀░░░░░░░░░░░▀░░░░░░░░░')
+print('Escolha um entre as seguintes operações:')
+print('(+) Adição')
+print('(-) Subtração')
+print('(*) Multiplicação')
+print('(/) Divisão')
+
+Operacao = input('> ')
+
+
+if Operacao == '+':
+    print(('Operação (+) Adição selecionada!'))
+elif Operacao == '-':
+    print(('Operação (-) Subtração selecionada!'))
+elif Operacao == '*':
+    print(('Operação (*) Multiplicação selecionada!'))
+elif Operacao == '/':
+    print(('Operação (/) Divisão selecionada!'))
+
+print('Escolha dois valores:')
+
+
+Numero1 = float(input('> '))
+Numero2 = float(input('> '))
+
+if Operacao == '+':
+    resultado = Numero1+Numero2
+elif Operacao == '-':
+    resultado = Numero1-Numero2
+elif Operacao == '*':
+    resultado = Numero1*Numero2
+elif Operacao == '/':
+    resultado = Numero1/Numero2
+
+print(('O Resultado é: {}'.format (resultado)))
+
+#Parâmetro para impedir o fechamento automático no CMD do Windows
+import os
+os.system("PAUSE")
