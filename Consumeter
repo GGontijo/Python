@@ -27,7 +27,7 @@ consumo = potencia / 1000
 valorfinal = consumo * horastotal * tarifa
 print()
 print()
-print('O eu consumo é de {} KWh'.format (consumo))
+print('O seu consumo é de {} KWh'.format (consumo))
 print()
 print()
 print('O valor a ser pago será de {}R$'.format (valorfinal))
