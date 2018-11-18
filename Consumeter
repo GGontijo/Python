@@ -4,6 +4,7 @@ print('Este programa irá calcular o quanto você irá gastar em BRL baseado no 
 print()
 print('###A potência é especificada nos eletrônicos em Watts (W)###')
 print()
+import os
 potencia = float(input('Informe a soma das potências de seus eletrônicos: > '))
 
 print('{} Watts'.format (potencia))
@@ -23,6 +24,13 @@ print()
 print('{} horas no total'.format (horastotal))
 
 consumo = potencia / 1000 * horastotal
+valorfinal = consumo * tarifa
 print()
 print()
-print('O seu gasto será de {} R$'.format (consumo))
+print('O eu consumo é de {} KWh'.format (consumo))
+print()
+print()
+print('O valor a ser pago será de {}R$'.format (valorfinal))
+print()
+print()
+os.system("PAUSE")
