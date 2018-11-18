@@ -1,0 +1,28 @@
+print('           Bem vindo ao "Consumeter"                    ')
+print()
+print('Este programa irá calcular o quanto você irá gastar em BRL baseado no seu consumo elétrico mensal')
+print()
+print('###A potência é especificada nos eletrônicos em Watts (W)###')
+print()
+potencia = float(input('Informe a soma das potências de seus eletrônicos: > '))
+
+print('{} Watts'.format (potencia))
+
+tarifa = float(input('Informe a tarifa cobrada por KWh em seu município (utilizar (.) ponto): > '))
+print('{} R$ por KWh'.format (tarifa))
+
+tempo = float(input('Informe a quantidade de horas que estes aparelhos ficarão ligados: > '))
+print('{} Horas'.format (tempo))
+
+dias = int(input('Informe a quantidade de dias que estes aparelhos ficarão ligados: > '))
+
+horastotal = float(tempo * dias)
+print()
+print('{} dias ou'.format (dias))
+print()
+print('{} horas no total'.format (horastotal))
+
+consumo = potencia / 1000 * horastotal
+print()
+print()
+print('O seu gasto será de {} R$'.format (consumo))
