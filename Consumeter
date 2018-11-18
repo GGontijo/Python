@@ -23,8 +23,8 @@ print('{} dias ou'.format (dias))
 print()
 print('{} horas no total'.format (horastotal))
 
-consumo = potencia / 1000 
-valorfinal = consumo * tarifa
+consumo = potencia / 1000
+valorfinal = consumo * horastotal * tarifa
 print()
 print()
 print('O eu consumo é de {} KWh'.format (consumo))
