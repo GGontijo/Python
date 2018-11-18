@@ -1,0 +1,67 @@
+print('           Bem vindo ao "Shutdowner"                     ')
+print('░░░░░░░░▄▄▄███░░░░░░░░░░░░░░░░░░░░')
+print('░░░▄▄██████████░░░░░░░░░░░░░░░░░░░')
+print('░███████████████░░░░░░░░░░░░░░░░░░')
+print('░▀███████████████░░░░░▄▄▄░░░░░░░░░')
+print('░░░███████████████▄███▀▀▀░░░░░░░░░')
+print('░░░░███████████████▄▄░░░░░░░░░░░░░')
+print('░░░░▄████████▀▀▄▄▄▄▄░▀░░░░░░░░░░░░')
+print('▄███████▀█▄▀█▄░░█░▀▀▀░█░░▄▄░░░░░░░')
+print('▀▀░░░██▄█▄░░▀█░░▄███████▄█▀░░░▄░░░')
+print('░░░░░█░█▀▄▄▀▄▀░█▀▀▀█▀▄▄▀░░░░░░▄░▄█')
+print('░░░░░█░█░░▀▀▄▄█▀░█▀▀░░█░░░░░░░▀██░')
+print('░░░░░▀█▄░░░░░░░░░░░░░▄▀░░░░░░▄██░░')
+print('░░░░░░▀█▄▄░░░░░░░░▄▄█░░░░░░▄▀░░█░░')
+print('░░░░░░░░░▀███▀▀████▄██▄▄░░▄▀░░░░░░')
+print('░░░░░░░░░░░█▄▀██▀██▀▄█▄░▀▀░░░░░░░░')
+print('░░░░░░░░░░░██░▀█▄█░█▀░▀▄░░░░░░░░░░')
+print('░░░░░░░░░░█░█▄░░▀█▄▄▄░░█░░░░░░░░░░')
+print('░░░░░░░░░░█▀██▀▀▀▀░█▄░░░░░░░░░░░░░')
+print('░░░░░░░░░░░░▀░░░░░░░░░░░▀░░░░░░░░░')
+#Parâmetro para importar as configurações do sistema operacional
+import os
+
+print('Esse programa serve para desligar automáticamente o windows de acordo com sua escolha')
+print('O que você deseja que o windows faça?')
+print('(1) Desligar')
+print('(2) Cancelar um delisgamento automático')
+
+Escolha = input('> ')
+
+
+if Escolha == '1':
+    print(('Operação (1) Desligar selecionado!'))
+elif Escolha == '2':
+    print(('Operação (2) Cancelar um desligamento automático selecionado!'))
+    os.system("shutdown /a")
+    print('Programação cancelada com sucesso!')
+    os.system("PAUSE")
+
+print('Escolha o tempo desejado para que o computador desligue:')
+print('(1) 15 Minutos')
+print('(2) 1 Hora')
+print('(3) 2 Horas')
+print('(4) 3 Horas')
+
+Tempo = input('> ')
+
+if Tempo == '1':
+    print(('Tempo de 15 minutos selecionado!'))
+    os.system("shutdown /s /t 900")
+elif Tempo == '2':
+    print(('Tempo de 1 Hora selecionado!'))
+    os.system("shutdown /s /t 3600")
+elif Tempo == '3':
+    print(('Tempo de 2 Horas selecionado!'))
+    os.system("shutdown /s /t 7200")
+elif Tempo == '4':
+    print(('Tempo de 3 Horas selecionado!'))
+    os.system("shutdown /s /t 10800")
+
+print('O computador irá desligar automáticamente no tempo selecionado!')
+print('Para cancelar o desligamento, abra novamente o programa e selecione a opção (2)')
+
+os.system("PAUSE")
+
+
+
