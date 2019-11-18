@@ -5,7 +5,7 @@ import os
 print('Esse programa serve para desligar automáticamente o windows de acordo com sua escolha')
 print('O que você deseja que o windows faça?')
 print('(1) Desligar')
-print('(2) Cancelar um delisgamento automático')
+print('(2) Cancelar um desligamento automático')
 
 Escolha = input('> ')
 
